@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserido vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="560" poster="imagens/limoes-capa.png" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+       <!-- * width: vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 600px.
+            * poster: configura uma imagem que vai aparecer como uma capa, enquanto o
+        visitante não aperta o play para reproduzir o vídeo
+            * controls: vai configurar se os controles do vídeo vão aparecer na parte inferior da
+        mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra
+        controls na tag ‹video>.
+            * autoplay: diz para o navegador se o vídeo vai começar a tocar automaticamente,
+        assim que a página for carregada. -->
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=0nS1eUTzIn8AImsX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
